@@ -1,0 +1,5 @@
+flask
+discord.py
+newspaper3k
+ollama
+lxml[html_clean]
