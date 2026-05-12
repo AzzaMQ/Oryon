@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Welcome to Oryon</title>
+
+<style>
+
+body {
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Arial, sans-serif;
+
+    background:
+    radial-gradient(circle at top center,
+    rgba(0, 140, 255, 0.35) 0%,
+    rgba(0, 80, 160, 0.15) 25%,
+    rgba(15,15,15,1) 60%);
+
+    background-color: #0f0f0f;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+    text-align: center;
+
+}
+
+.container {
+
+    width: 80%;
+    max-width: 800px;
+
+}
+
+.logo {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.logo span {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    border-bottom: 2px solid white;
+
+    padding-bottom: 5px;
+
+}
+ 
+.logo img {
+
+    width: 50px;
+
+}
+
+h1 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+
+}
+
+.subtitle {
+
+    color: #f1f1f1;
+
+    line-height: 1.8;
+
+    font-size: 18px;
+
+    font-weight: 300;
+
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+
+    padding-bottom: 20px;
+
+}
+
+.box {
+
+    margin-top: 45px;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,0.06),
+        rgba(255,255,255,0.03)
+    );
+
+    padding: 40px;
+
+    border-radius: 30px;
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(0,195,255,0.15);
+
+    box-shadow:
+    0 0 40px rgba(0,0,0,0.4),
+    0 0 25px rgba(0,195,255,0.08);
+
+}
+.supported {
+
+    margin-top: 20px;
+
+    line-height: 2;
+
+    color: #eaeaea;
+
+}
+
+button {
+
+    margin-top: 40px;
+
+    padding: 15px 40px;
+
+    border-radius: 30px;
+
+    border: none;
+
+    background: linear-gradient(135deg, #1f3b6f, #00c3ff);
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+button:hover {
+
+    transform: scale(1.05);
+
+    box-shadow: 0 0 20px rgba(0,195,255,0.6);
+
+}
+
+  .footer {
+
+    margin-top: 30px;
+
+    color: #8f8f8f;
+
+    font-size: 14px;
+
+    display: block;
+
+}
+a {
+
+    display: inline-block;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+
+        <span>Oryon</span>
+
+        <img src="{{ url_for('static', filename='oryon.png') }}">
+
+    </div>
+
+    <!-- TITLE -->
+    <h1>
+        Instantly summarize news articles with AI.
+    </h1>
+
+    <!-- SUBTITLE -->
+    <div class="subtitle">
+
+        Oryon works best with public news websites.
+
+        Some premium websites may block AI analysis.
+
+    </div>
+
+    <!-- BOX -->
+    <div class="box">
+
+    <h2>Optimized Sources</h2>
+
+    <p class="box-text">
+        Oryon currently performs best on these news platforms.
+    </p>
+
+    <div class="supported">
+
+        <div class="badge">CNN</div>
+        <div class="badge">Reuters</div>
+        <div class="badge">CNBC</div>
+        <div class="badge">Kompas</div>
+        <div class="badge">Detik</div>
+
+    </div>
+
+    <p class="coming">
+        More sources coming soon.
+    </p>
+
+</div>
+    
+
+    <!-- BUTTON -->
+    <a href="/home">
+
+        <button>Enter Oryon</button>
+
+    </a>
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+        Built for fast news understanding.
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
